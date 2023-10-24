@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.main_container{
+    width: 100%;
+    height: 100vh;
+    max-height: 1000vh;
+    display: flex;
+    flex-direction: column;
+}
+.main_container .title{
+    width: 100%;
+    height: 20vh;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.title h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.card_container{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    max-height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.card_container .card{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    margin: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card .img_div{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70%;
+    background-color: gray;
+    border-radius: 2rem;
+}
+.card .img_div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain cover;
+    border-radius: 2rem;
+}
+.content{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.content p{
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+    text-align:center;
+}
+.content span{
+    text-transform: capitalize;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    color: rgb(238, 53, 53);
+}
+.btn_primary {
+    color: white;
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(86, 86, 243);
+    transition: all 0.2s ease;
+}
+
+.btn_primary:hover {
+    background-color: rgb(85, 85, 241);
+    border-radius: 1.5rem;
+}

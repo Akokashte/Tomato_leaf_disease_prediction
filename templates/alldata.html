@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alldisease data</title>
+    <link rel="stylesheet" href="../static/styles/card.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <section class="main_container">
+            <div class="title">
+                <h1>tomato leaf predicted disease data </h1>
+            </div>
+            <div class="card_container">
+        {% for item in data %}
+                <div class="card">
+                    <div class="img_div">
+                        <img src={{item.image}} alt="leaf img here" />
+                    </div>
+                    <div class="content">
+                        <p>Predicted Disease</p>
+                        <span>{{item.disease_predicted}}</span>
+                    </div>
+                </div>
+                {% endfor %}
+                {% if data|length == 1 %}
+                <form action="/alldata">
+                    <button type="submit" class="btn_primary">View all</button>
+                </form>
+                {% endif %}
+            </div>
+            <div class="gap"></div>
+        </div>
+        </section>
+</body>
+
+</html>

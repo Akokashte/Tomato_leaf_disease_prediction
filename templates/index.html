@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Disease Predictor</title>
+    <link rel="stylesheet" href="../static/styles/index.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div action='' class="container">
+        <div class="img_container">
+        </div>
+        <div class="form_container">
+            <h2>tomato plant Disease predictor</h2>
+            <form class="form" action="/prediction" method="post" enctype="multipart/form-data">
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="text" name="image_link" id="image_link" placeholder="Enter Image Url" required>
+                <button type="submit" class="btn_primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
