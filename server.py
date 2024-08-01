@@ -9,7 +9,7 @@ from PIL import Image
 import urllib.request
 
 app = Flask(__name__)
-client = MongoClient("mongodb+srv://ankitbda:Tenali#1480@cluster0.s1tnqa7.mongodb.net/BDAretryWrites=true&w=majority")
+client = MongoClient("")
 db = client.leaf_disease
 leaf_collection = db.leaf_collection
 
